@@ -4,4 +4,11 @@ Anotações da Vídeo aula disponível no Youtube:
 
 1.  
 2.  
-9. Array
+3.  
+4.  
+5.  
+6.  
+7.  
+8.  
+9. [Array](./aula09-array)
+10. [Expressão regular](./aula10-expressaoregular)
