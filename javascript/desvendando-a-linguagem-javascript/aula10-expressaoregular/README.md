@@ -1,5 +1,5 @@
 #Desvendando a Linguagem Javascript
-##Expressões Regulares
+##Aula 10 - Expressões Regulares
 
 - Estrutura de caracteres que especificam um padrão formal para realizar validação de campos, extração de dados, substituição de caracteres
 
@@ -150,7 +150,7 @@ console.log(telefone.match(regExp)); //["(80) 999778899", index: 15, input: "<ta
 **g** - Global matching
 **m** - Multiline matching
 >Obs: são utilizados no final da expressão regular e podem ser combinados. Ex: `/<expressão regular>/g`
->Exemplo com  a função `regExp.exec(\<expressão regular>\,g)`   
+>Exemplo com  a função `regExp.exec(\<expressão regular>\,g)`
 
 ```js
 var regExp = /\(\d{2}\)\s\d{4,5}-?\d{4}/g;
