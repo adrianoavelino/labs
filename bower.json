@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "tinymce": "~4.2.4"
+    "tinymce": "~4.2.4",
+    "jquery": "~2.1.4"
   }
 }
