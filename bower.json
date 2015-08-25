@@ -1,0 +1,26 @@
+{
+  "name": "labs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/adrianoavelino/labs",
+  "authors": [
+    "ADriano AVelino <adriano-st777@hotmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "labs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tinymce": "~4.2.4",
+    "jquery": "~2.1.4"
+  }
+}
