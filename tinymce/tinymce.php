@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>JS Bin</title>
+  <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
   <script src="http://localhost/github/labs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
   <script type="text/javascript">
   tinymce.init({
   selector: '#my_editor',
   plugins: ["image"],
+  image_advtab: true,
   file_browser_callback: teste,
 
   // file_browser_callback: function(field_name, url, type, win) {
@@ -19,11 +21,18 @@
   //     // console.log( win);
   //
   // },
+
+
+  //acessar iframe
+
   images_upload_url: "postAcceptor.php"
 });
 
 
 function teste(field_name, url, type, win) {
+  var endereco = $("#mceu_49-body iframe").contents().find('#adriano').val();
+  $("#endereco").val(endereco);
+
   tinymce.activeEditor.windowManager.open({
     file: 'teste.html',// use an absolute path!
     title: 'Upload de Arquivos',
@@ -38,6 +47,10 @@ function teste(field_name, url, type, win) {
   return false;
 }
 
+$("#t").click(function(){
+  alert('teste');
+});
+
 
 
 
@@ -46,6 +59,13 @@ function teste(field_name, url, type, win) {
   </script>
 </head>
 <body>
+  <p></p>
+  <p></p>
+  <p></p>
+<input type="submit" name="" id="" class="btn">
+<p></p>
+<input type="text" name="endereco" value="endereco" id="endereco">
+
 <textarea id="my_editor"></textarea>
 
 <iframe id="form_target" name="form_target" style="display:none"></iframe>
