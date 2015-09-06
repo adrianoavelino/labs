@@ -4,7 +4,7 @@ Anotações da Vídeo aula disponível no Youtube:
 
 1.  
 2.  
-3.  
+3. [String](./aula03-string)
 4.  
 5.  
 6.  
