@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Treinando Material Designer</title>
+	<link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+	<script src="/bower_components/material-design-lite/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="http://willianjusten.com.br/labs/background-fixo-css/js/vunit.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script>
+			 new vUnit({
+					CSSMap: {
+							'.vh': {
+									property: 'height',
+									reference: 'vh'
+							}
+					}
+			}).init();
+	</script>
+</head>
+<body> <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">BO Studio</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation">
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+		        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Instrumentos</a>
+		        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Músicos</a>
+		        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Mural</a>
+		        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contato</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">BO Studio</span>
+        <nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="">Home</a>
+					<a class="mdl-navigation__link" href="">Instrumentos</a>
+					<a class="mdl-navigation__link" href="">Músicos</a>
+					<a class="mdl-navigation__link" href="">Mural</a>
+					<a class="mdl-navigation__link" href="">Contato</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+				<div class="page-content"><!-- Your content goes here -->
+
+					<!-- <div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div>
+
+					<div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div>
+
+					<div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div>
+
+					<div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div>
+
+					<div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div>
+
+					<div class="fullall">
+							<div class="full">
+									<h1>Header Full Screen com CSS!!</h1>
+							</div>
+					</div> -->
+
+					<section class="vh100">
+					      <h1>Great Music Quotes</h1>
+					    </section>
+
+					    <section class="vh100">
+					      <blockquote cite="Friedrich Nietzsche">
+					          <h3>"Without music, life would be a mistake."</h3>
+					          <p>Friedrich Nietzsche</p>
+					      </blockquote>
+					    </section>
+
+					    <section class="vh100">
+					      <blockquote cite="John Green">
+					          <h1>"Some people have lives; some people have music."</h1>
+					          <p>John Green</p>
+					      </blockquote>
+					    </section>
+
+					    <section class="vh100">
+					      <blockquote cite="Victor Hugo">
+					          <h4>"Music expresses that which cannot be said and on which it is impossible to be silent."</h4>
+					          <p>Victor Hugo</p>
+					      </blockquote>
+					    </section>
+
+					    <section class="vh100">
+					      <h1>Where words leave off, music begins.</h1>
+					    </section>
+
+        </div>
+      </main>
+    </div>
+	</body>
+</html>

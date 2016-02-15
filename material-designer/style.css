@@ -1,0 +1,99 @@
+/**  Header personalizado**/
+.mdl-layout__header-row .mdl-navigation__link:hover {
+    border-bottom: 4px solid;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    border-bottom: 4px solid transparent;
+}
+/**  Header personalizado**/
+
+html,body{
+   width: 100%;
+   height:100%;
+}
+
+.fullall {
+   display: table;
+   height: 45em;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed
+}
+
+.full {
+   padding: 7%;
+   display: table-cell;
+   vertical-align: middle;
+
+}
+
+
+.fullall:nth-child(1) {
+    background-image: url(./img/guitar2.jpg);
+    color: #fff;
+}
+.fullall:nth-child(3) {
+    color: #fff;
+    background-color: #000;
+    background-image: url(./img/bass.jpg);
+
+}
+
+.fullall:nth-child(5) {
+    background-image: url(./img/drums.jpg);
+}
+
+/*header h1 {
+   font-size: 2.5em;
+}
+header h2 {
+   font-size: 1em;
+}*/
+
+section {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+section p {
+    margin: 0;
+}
+section:first-of-type {
+    text-transform: uppercase;
+}
+section:nth-of-type(odd) {
+    color: #fff;
+    background-color: #000;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+section:nth-child(1) {
+    background-image: url(./img/guitar2.jpg);
+}
+section:nth-child(3) {
+    background-image: url(./img/bass.jpg);
+}
+section:nth-child(5) {
+    background-image: url(./img/drums.jpg);
+}
+
+
+@media screen and (max-width: 768px) {
+  /*body {background-color: yellow;}*/
+  .mdl-layout__header-row .mdl-navigation {display: none; min-height: 5em;}
+
+}
+
+@media screen and (max-width: 768px) {
+  /*body {background-color: yellow;}*/
+  .mdl-layout__header-row .mdl-navigation {display: none; min-height: 5em;}
+}

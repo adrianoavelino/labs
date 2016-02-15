@@ -1,0 +1,17 @@
+{
+  "name": "material-designer",
+  "version": "0.0.0",
+  "description": "Aprendendo Material Designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adriano Avelino",
+  "license": "",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-util": "~3.0.6",
+    "gulp-watch": "~4.3.5",
+    "browser-sync": "~2.9.11"
+  }
+}
