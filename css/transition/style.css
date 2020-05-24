@@ -1,0 +1,42 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+body,
+.row,
+.box {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.box {
+    background: #3dccc7;
+    height: 300px;
+    padding: 10px;
+    /* 
+    transition-duration: 1200ms;
+    transition-property: background, transform;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    */
+    transition: 1200ms transform cubic-bezier(0.18, 0.89, 0.32, 1.28), 1800ms background ease-in-out;
+    width: 300px;
+}
+
+.box:hover {
+    background: #ff6b6b;
+    transform: rotate(90deg);
+}
