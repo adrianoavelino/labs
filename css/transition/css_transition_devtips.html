@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition - DEVTIPS</title>
+    <link rel="stylesheet" href="style-css-transition-devtips.css">
+</head>
+<body>
+    <div class="trigger">
+        <div class="box"></div>
+    </div>
+    <script>
+        let $trigger = document.querySelector(".trigger");
+        $trigger.addEventListener("click", function(e){
+            let $box = document.querySelector(".box").classList
+            $box.toggle("clicked")
+        });
+    </script>
+</body>
+</html>
